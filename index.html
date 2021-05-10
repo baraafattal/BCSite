@@ -121,7 +121,7 @@
                                         <p>contact us today and a Consultant will contact you to 
                                             provide a FREE initial consultation!</p>
                                             <p>Get your free consultation today!</p>
-                                        <a href="#0" class="btn-curve btn-lit mt-30">
+                                        <a onclick="scrollToBottom();" id="button1" class="btn-curve btn-lit mt-30">
                                             <span>Contact us today</span>
                                         </a>
                                     </div>
@@ -227,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#0">
+            <a onclick="scrollToBottom();" id="button2">
             <div class="smore custom-font d-flex flex-row justify-content-center align-items-center">
                 <p>Contact Us</p>
                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -260,7 +260,7 @@
                                     <div class="author">
                                         <p class="author-details">Speak to a consultant today to see how we can help you!</p>
                                         <p class="author-details">Get your free consultation today!</p>
-                                        <a href="#0" class="btn-curve btn-blc mt-30">
+                                        <a id="button3" onclick="scrollToBottom();" class="btn-curve btn-blc mt-30">
                                             <span>Contact us today</span>
                                         </a>
                                     </div>
@@ -275,7 +275,7 @@
 
     <!-- ==================== End testimonials ==================== -->
      <!-- ==================== Start Blog ==================== -->
-     <section class="contact-sec section-padding sub-bg">
+     <section class="contact-sec section-padding sub-bg" id="contactus">
         <div class="container">
             <div class="sec-head custom-font text-center">
                 <h6 class="wow fadeIn" data-wow-delay=".5s">Get In Touch</h6>
@@ -318,9 +318,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div id="form-status">
-                                          
-                                        </div>
+                                        <div id="form-status"></div>
                                     </div>
                                 </div>
                             </div>
@@ -359,6 +357,18 @@
       });
     }
     form.addEventListener("submit", handleSubmit)
+
+    // var but1 = document.getElementById("button1");
+    // var but2 = document.getElementById("button2");
+    // var but3 = document.getElementById("button3");
+
+    function scrollToBottom() {
+        document.getElementById("contactus").scrollIntoView();
+    }
+
+    // but1.addEventListener("click", scrollToBottom);
+    // but2.addEventListener("click", scrollToBottom);
+    // but3.addEventListener("click", scrollToBottom);
     </script>
 
 
